@@ -599,7 +599,7 @@ color: red;
     .left-hero{
       width: 100%;
       & h1{
-        font-size: 3rem;
+        font-size: 2.2rem;
         width: 80%;
       }
   }
@@ -732,7 +732,7 @@ form input{
     }
     .hero-heading{
       width: 80%;
-      font-size: 8vw;
+      font-size: 6vw;
     }
     .right-hero{
      display: flex;
