@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/real-miami');
+
+                
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+body{
+ max-width: 100%;
+ height: 100%;
+ background-color: #050505;
+
+}
+
+.preloader{
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  position: fixed;
+  z-index: 99;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+& img{
+  z-index: 1111;
+}
+ 
+
+}
+.cursor{
+  width: 100%;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  /* border-radius: 50%;
+ position: absolute;
+ z-index: 10;*/
+} 
+
+
+.center{
+  text-align: center;
+  margin: 0 auto;  
+}
+  header{
+     
+    width: 100%;
+  
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    position: relative; 
+   padding-top: 3rem;
+   background-color: #000000;
+  
+      
+  }
+
+  .logo{
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 800;
+    color:#E6533C;
+
+   
+  }
+
+  .manu-items{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    border: 1px solid gray;
+    padding: 8px 10px;
+    border-radius: 25px;
+
+
+  }
+  .manu-items li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      font-size: 1.1rem;
+  }
+  .active{
+    background-color: #E6533C;
+    padding:5px 20px ;
+    border-radius: 25px;
+
+  }
+
+  .manu-bar{
+    color: white;
+    font-size: 2rem;
+    display: none;
+  }
+
+
+        /* hero section starts here */
+
+  /* ================================== */
+  main{
+    position: relative;
+  }
+  .hero-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+  
+   
+  }
+
+  
+  .left-hero{
+    width: 60%;
+   
+    
+    }
+   .hero-heading{
+    width: 90%;
+      font-size: 5rem;
+      line-height: 1;
+
+      & .shape{
+        font-style: italic;
+        font-family: 'Real Miami', sans-serif;
+        font-weight: 400;                                 
+      }
+     
+   }
+     
+    .para{
+      color: rgba(128, 128, 128, 0.671);
+      padding: 2rem 0;
+      width: 80%;
+    }
+
+    
+ .hero-btns{
+  width: 100%;
+   display: flex;
+   gap: 1rem;
+ 
+ }
+
+  .btn{
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    background-color: #E6533C;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+  }
+  .btn2{
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color:transparent;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid white;
+   
+  }
+
+
+
+
+
+
+  .right-hero{
+    width: 40%;
+    position: relative;
+    height: auto;
+  
+   
+
+    }
+
+    .right-hero img{
+     text-align: left;
+   
+     margin:auto 0;
+     
+    }
+
+    .small{
+      background-color: rgba(128, 128, 128, 0.411);
+      width: fit-content;
+      padding: 1rem;
+      border-radius: 10px;
+
+      & span{
+        font-size: 24px;
+        font-weight: 900;
+      }
+      & p{
+        font-size: .8rem;
+        color: rgba(255, 255, 255, 0.425);
+        font-weight: 300;
+      }
+    }
+    .rhero-wrapper{
+     
+      width: 342px;
+      height: 500px;
+      position: relative;
+    
+    }
+    .rhero-wrapper img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .small-1{
+      position: relative;
+      top: 20%;
+      left: 60%;
+   
+    }
+    .small-2{
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      position: relative;
+      top: 50%;
+      left: -24%;
+    
+    }
+    #circle{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #E6533C;
+    }
+
+      /* hero section  ends */
+
+  /* ================================== */
+
+
+
+  /* habits  section starts here */
+
+  /* ================================== */
+  .habits{
+    margin: 0 auto;
+  
+    background-color: #000000;
+  }
+
+  .content{
+    padding: 4rem 0;
+  } 
+  .heading-two{
+    font-size: 3rem;
+    font-weight: 900;
+   
+  }
+  .content-para{
+    width: 50%;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.425);
+    font-weight: 300;
+    margin-top: 1rem;
+  }
+
+  .habits-wrapper{
+  
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .circle-habit{
+  
+    text-align: center;
+    margin: 0 auto;
+
+  }
+  .circle-habit img{
+   border-radius: 50%;
+  }
+  .circle-habit h4{
+ margin-top: 1.5rem;
+ font-weight: 700;
+ font-size: 1.2rem;
+  }
+  .content-para2{
+
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.425);
+    font-weight: 300;
+    margin-top: 1rem;
+  }
+
+  .habit-third-section{
+  
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 80%;
+    gap: 1rem;
+   
+    margin: 6rem auto 0;
+    border-radius: 15px;
+    background-color:#222222;
+  }
+  #btn-3{
+    padding: 15px 65px;
+    margin-top: 1rem;
+  }
+  .habit-third-left{
+  width: 50%;
+  margin-left: 3rem;
+  margin-top: 1rem;
+ 
+ 
+  }
+  
+  .run{
+    width: 50%;
+    height: 18rem;
+    position: relative;
+   
+  }
+  .run img{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+
+    border-radius: 25px;
+  }
+
+
+  /* habits  section starts here */
+
+  /* ================================== */
+
+
+
+    /* bmi calculator section starts here */
+
+    .bmi-section{
+      background-color: #000000;
+      width: 100%;
+   
+  
+    }
+
+    .bmi-heading{
+     width: 50%;
+     margin:0rem auto;
+     padding: 6rem 0;
+    }
+
+    .bmi-calc{
+      width: 100%;
+      margin:0 auto;
+      background-color: #212121;
+     
+    }
+    .calc-container{
+      width: 80%;
+      margin:0 auto;
+      display: flex;
+    
+    }
+
+    .calc-left{
+      width: 35%;
+      & h3{
+        padding: 2.5rem 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+    }
+
+
+    table,th,td{
+      text-align: justify;
+      border: 1px solid #2d2d2d;
+      border-collapse: collapse;
+      padding: 15px;
+
+     
+    }
+     td{
+      opacity: .7;
+      font-weight: 300;
+      font-size: .8rem;
+    }
+
+    .calc-right{
+      width: 65%;
+     
+      & h3{
+        padding: 2.5rem 0 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+    }
+    form{
+      margin: 2rem 0;
+      & button{
+        margin-top: 1rem;
+      }
+    }
+
+    form input,select{
+      width: 40%;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 5px;
+      background-color: #383838;
+      border: none;
+    }
+    #activity{
+      width:calc( 80% + 15px);
+      /* background-color: #E6533C; */
+    }
+ 
+   
+  /* ================================== */
+
+
+     /* hero section starts here */
+     .card-container{
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 15px;
+      padding: 10px;
+      background-color: #383838;
+      border-radius: 10px;
+     }
+
+.card{
+  position: relative;
+  height: 272px;
+  background-image: url(../images/trainer1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.3rem;
+  text-align: reverse;
+}
+.card-2{
+  background-image: url(../images/trainer2.png);
+}
+.card-3{
+  background-image: url(../images/trainer3.png); 
+}
+.card-4{
+  background-image: url(../images/trainer4.png);  
+}
+.card-5{
+  background-image: url(../images/trainer5.png);
+}
+.card-6{
+  background-image: url(../images/trainer6.png);
+}
+
+.card-content{
+position: absolute;
+bottom: 7%;
+left: 5%;
+
+
+& h5{
+ font-size: 1rem;
+ font-weight: 600;
+ line-height: .4;
+}
+}
+  /* ================================== */
+
+
+footer{
+  width: 100%;
+  margin-top: 4rem;
+  background-color:#2d2d2d;
+  padding-bottom: 1rem;
+
+
+}
+.footer-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 45% auto auto;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+
+.footer-div-2{
+  padding-right: 3rem;
+}
+
+
+hr{
+  width: 80%;
+  margin: 0 auto;
+  
+color: red;
+}
+
+.chalange{
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  /* background-color: rgba(127, 255, 212, 0.404); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+ 
+}
+.chalange-container{
+  width: 80%;
+  height: 100%;
+  /* height: 30vh; */
+  /* background-color: blanchedalmond; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+ 
+}
+.chalange-container>div img{
+  width: 100%;
+  height: 100%;
+
+}
+.div1{
+ width: 20%;
+ height: 40%;
+ /* border: 1px solid red; */
+ border-radius: 15px;
+ overflow: hidden;
+}
+.div2{
+  width: 30%;
+  height: 70%;
+  /* border: 1px solid red; */
+  border-radius: 15px;
+  overflow: hidden;
+}
+.div3{
+  width: 20%;
+  height: 40%;
+  /* border: 1px solid red; */
+  border-radius: 15px;
+  overflow: hidden;
+}
+.chalange-container i {
+  font-size: 4rem;
+  color: #646161;
+}
+
+
+
+  @media screen and (max-width:576px)  {
+    .hero-container,.habit-third-section, .calc-container, .footer-wrapper{
+      flex-direction: column;
+    }
+    
+    .manu-items{
+      display: none;
+    }
+    .manu-bar{
+   
+      display: block;
+    }
+
+   
+    .left-hero{
+      width: 100%;
+      & h1{
+        font-size: 3rem;
+        width: 80%;
+      }
+  }
+
+  
+  .right-hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+   }
+   .small-1{
+    position: relative;
+    top: 10%;
+    left: 55%;
+    padding: 15px 8px;
+ 
+  }
+
+.small-2{
+  bottom: 40%;
+    left: 0%;
+}
+
+
+ /*hero section ends here */
+
+  /* ================================== */
+
+/* anotgher */
+.content{
+  padding: 1rem 0;
+}
+.heading-two{
+  font-size: 2rem;
+  
+ 
+}
+.content-para{
+  width: 60%;
+}
+
+/* anotgher */
+.habits-wrapper{
+  width: 80%;
+  margin: 2rem auto 0;
+  display: grid;
+  grid-template-columns:1fr;
+  gap: 3rem;
+
+}
+.habit-third-left{
+  width: 100%;
+  margin: 2rem 0;
+
+}
+  #btn-3{
+   width: 100%;
+   margin-top: 1rem;
+  }
+
+
+ /* habits  section ends here */
+
+  /* ================================== */
+  .calc-left, .calc-right{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+form{
+  margin: 2rem auto;
+}
+form input{
+  width: 45%;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #383838;
+  border: none;
+}
+.select-placeholder{
+  width: 45%;
+}
+#activity{
+  width:calc( 90% + 15px);
+}
+
+
+
+.card-container{
+  display: grid;
+  grid-template-columns:1fr;
+ }
+
+ 
+.cont-align{
+  margin: 2rem auto;
+   }
+
+ /* habits  section ends here */
+
+  /* ================================== */
+  .run{
+    width: 100%;
+    height: 18rem;
+    position: relative;
+   
+  }
+
+  .footer-wrapper{
+ 
+    display: flex;
+    gap: 2rem;
+  }
+
+  }
+
+  
+  @media screen and (min-width: 576px) and (max-width: 992px) {
+
+   
+    .hero-container{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    .left-hero, .right-hero{
+     width: 90%;
+    }
+    .hero-heading{
+      width: 80%;
+      font-size: 8vw;
+    }
+    .right-hero{
+     display: flex;
+     justify-content: center;
+     margin-top: 3rem;
+    }
+ 
+    .small-1{
+      position: relative;
+      top: 10%;
+      left: 55%;
+   
+    }
+ 
+    .manu-items{
+     gap: 1rem;
+   }
+   .manu-items li a {
+     
+     font-size: .8rem;
+ }
+ 
+
+ .habits-wrapper{
+   grid-template-columns:1fr 1fr;
+ }
+
+ .habit-third-left{
+ 
+  margin-left: 0rem;
+  margin-top: 1rem;
+
+ 
+  }
+  .heading-two{
+    font-size: 5vw;
+    font-weight: 900;
+   
+  }
+   /* habits  section ends here */
+
+  /* ================================== */
+  .calc-container{
+ display: flex;
+ flex-direction: column;
+  }
+  .calc-left, .calc-right{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  form{
+    margin: 2rem auto;
+  }
+  form input{
+    width: 45%;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #383838;
+    border: none;
+  }
+  #activity{
+    width:calc( 90% + 15px);
+  }
+  .select-placeholder{
+    width: 45%;
+  }
+  .footer-div-1{
+    grid-column: 1/-1;
+       }
+
+ 
+  
+
+ 
+ }
+   
+   
