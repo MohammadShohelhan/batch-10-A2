@@ -2,7 +2,12 @@
 
 @import url('https://fonts.cdnfonts.com/css/real-miami');
 
-                
+@font-face {
+  font-family: 'Miama';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Miama'), url('https://fonts.cdnfonts.com/s/302/Miama.woff') format('woff');
+}             
 
 
 *{
@@ -132,13 +137,15 @@ body{
     }
    .hero-heading{
     width: 90%;
-      font-size: 5rem;
+      font-size: 4rem;
       line-height: 1;
 
       & .shape{
         font-style: italic;
-        font-family: 'Real Miami', sans-serif;
-        font-weight: 400;                                 
+        font-family: 'Miama';
+        font-weight: 800; 
+        font-size: 6rem;
+        line-height: .4;                                
       }
      
    }
@@ -527,58 +534,20 @@ hr{
 color: red;
 }
 
-.chalange{
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  /* background-color: rgba(127, 255, 212, 0.404); */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+/* challange============================== */
 
- 
+.challange{
+  background-color: #000000;
+width: 100%;
+height: 100vh;
+margin: 0 auto;
 }
-.chalange-container{
+.clg-wrraper{
   width: 80%;
-  height: 100%;
-  /* height: 30vh; */
-  /* background-color: blanchedalmond; */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
- 
+  height: 100vh;
+  background-color: #E6533C;
 }
-.chalange-container>div img{
-  width: 100%;
-  height: 100%;
 
-}
-.div1{
- width: 20%;
- height: 40%;
- /* border: 1px solid red; */
- border-radius: 15px;
- overflow: hidden;
-}
-.div2{
-  width: 30%;
-  height: 70%;
-  /* border: 1px solid red; */
-  border-radius: 15px;
-  overflow: hidden;
-}
-.div3{
-  width: 20%;
-  height: 40%;
-  /* border: 1px solid red; */
-  border-radius: 15px;
-  overflow: hidden;
-}
-.chalange-container i {
-  font-size: 4rem;
-  color: #646161;
-}
 
 
 
@@ -600,9 +569,14 @@ color: red;
       width: 100%;
       & h1{
         font-size: 2.2rem;
-        color: blue;
         width: 80%;
-    
+       & .shape{
+          font-style: italic;
+          font-family: 'Miama';
+          font-weight: 800; 
+          font-size: 3rem;
+          line-height: .4;                                
+        }
       }
   }
 
@@ -625,6 +599,10 @@ color: red;
   bottom: 40%;
     left: 0%;
 }
+.hero-btns button{
+  font-size: 14px;
+  padding: 10px 15px;
+}
 
 
  /*hero section ends here */
@@ -636,7 +614,7 @@ color: red;
   padding: 1rem 0;
 }
 .heading-two{
-  font-size: 2rem;
+  font-size: 1.5rem;
   
  
 }
@@ -711,6 +689,9 @@ form input{
     position: relative;
    
   }
+  .run img{
+   object-fit: cover;
+  }
 
   .footer-wrapper{
  
@@ -735,6 +716,13 @@ form input{
     .hero-heading{
       width: 80%;
       font-size: 6vw;
+      & .shape{
+        font-style: italic;
+        font-family: 'Miama';
+        font-weight: 800; 
+        font-size: 4rem;
+        line-height: .4;                                
+      }
     }
     .right-hero{
      display: flex;
